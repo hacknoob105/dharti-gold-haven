@@ -141,24 +141,34 @@ const Index = () => {
       />
 
       <main>
-        {/* Hero Section */}
-        <section className="py-12 px-4">
-          <div className="container mx-auto text-center">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 logo-shimmer animate-pulse-glow">
-              Find Your Dream Property
+        {/* Hero Section with Premium Background */}
+        <section className="relative py-20 px-4 overflow-hidden">
+          {/* Luxury Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background opacity-90" />
+          <div className="absolute inset-0 glass-luxury opacity-30" />
+          
+          {/* Hero Content */}
+          <div className="container mx-auto text-center relative z-10">
+            <h2 className="text-5xl md:text-7xl font-poppins font-black mb-8 relative">
+              <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse-glow">
+                Find Your Dream Property
+              </span>
+              <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full -z-10" />
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Discover luxury real estate with premium locations, world-class amenities, 
-              and exceptional service. Your perfect home is just a click away.
-            </p>
-            <div className="flex items-center justify-center space-x-6 text-primary">
-              <div className="flex items-center space-x-2">
-                <Zap className="w-5 h-5" />
-                <span className="font-semibold">Instant Search</span>
+            <div className="glass-luxury rounded-2xl p-8 max-w-4xl mx-auto mb-10 backdrop-blur-xl">
+              <p className="text-xl md:text-2xl text-foreground font-urbanist font-medium leading-relaxed">
+                Discover luxury real estate with premium locations, world-class amenities, 
+                and exceptional service. Your perfect home is just a click away.
+              </p>
+            </div>
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-primary">
+              <div className="glass rounded-xl px-6 py-3 flex items-center space-x-3">
+                <Zap className="w-6 h-6" />
+                <span className="font-semibold text-lg">Instant Search</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Building2 className="w-5 h-5" />
-                <span className="font-semibold">Premium Properties</span>
+              <div className="glass rounded-xl px-6 py-3 flex items-center space-x-3">
+                <Building2 className="w-6 h-6" />
+                <span className="font-semibold text-lg">Premium Properties</span>
               </div>
             </div>
           </div>
