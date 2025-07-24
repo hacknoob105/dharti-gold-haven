@@ -15,10 +15,11 @@ export const Header = ({ category, onCategoryChange, onShowFavorites, favoritesC
     <header className="sticky top-0 z-50 glass-luxury">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Animated Logo */}
+          {/* Enhanced Animated Logo */}
           <div className="flex items-center space-x-4">
-            <h1 className="text-3xl font-bold logo-shimmer animate-pulse-glow">
+            <h1 className="text-3xl font-bold logo-shimmer animate-pulse-glow animate-float relative">
               DHARTI
+              <div className="absolute -inset-2 bg-primary/20 blur-xl rounded-lg -z-10 animate-glow-pulse" />
             </h1>
             <span className="hidden md:block text-sm text-muted-foreground">
               Luxury Real Estate

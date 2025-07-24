@@ -143,17 +143,20 @@ const Index = () => {
       <main>
         {/* Hero Section with Premium Background */}
         <section className="relative py-20 px-4 overflow-hidden">
-          {/* Luxury Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background opacity-90" />
-          <div className="absolute inset-0 glass-luxury opacity-30" />
+          {/* Hero Background Image */}
+          <div className="absolute inset-0 hero-background" />
+          {/* Luxury Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80" />
+          <div className="absolute inset-0 glass-luxury opacity-40" />
           
           {/* Hero Content */}
           <div className="container mx-auto text-center relative z-10">
-            <h2 className="text-5xl md:text-7xl font-poppins font-black mb-8 relative">
+            <h2 className="text-5xl md:text-7xl font-poppins font-black mb-8 relative animate-float">
               <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse-glow">
                 Find Your Dream Property
               </span>
-              <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full -z-10" />
+              <div className="absolute -inset-8 bg-primary/20 blur-3xl rounded-full -z-10 animate-glow-pulse" />
+              <div className="absolute -inset-4 bg-accent/10 blur-2xl rounded-full -z-10" />
             </h2>
             <div className="glass-luxury rounded-2xl p-8 max-w-4xl mx-auto mb-10 backdrop-blur-xl">
               <p className="text-xl md:text-2xl text-foreground font-urbanist font-medium leading-relaxed">
